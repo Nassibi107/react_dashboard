@@ -17,7 +17,7 @@ const SideNavBar = () => {
 		},
 		{
 			text: "users",
-			icon: "icons/message.svg",
+			icon: "../icons/message.svg",
 			path :"Users"
 		},
 		{
@@ -59,6 +59,7 @@ const SideNavBar = () => {
 							className={isExpanded ? "menu-item" : "menu-item menu-item-NX"}
 							to = {path}
 						>
+						
 							<img className="menu-item-icon" src={icon} alt="" srcset="" />
 							{isExpanded && <p>{text}</p>}
 						</Link>
@@ -76,7 +77,7 @@ const SideNavBar = () => {
 						/>
 						<div className="nav-footer-info">
 							<p className="nav-footer-user-name">Dashboard</p>
-							<p className="nav-footer-user-position">secion admin</p>
+							<p className="nav-footer-user-position">secssion admin</p>
 						</div>
 					</div>
 				)}

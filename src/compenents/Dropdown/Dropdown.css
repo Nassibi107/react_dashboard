@@ -1,0 +1,37 @@
+
+
+   
+
+        .card {
+            width: 250px;
+             height: 300px;
+             overflow: auto;
+        }
+
+        #circle-avatar {
+            display: grid;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #0091ff;
+            place-items: center;
+
+            span {
+                font-size: 48px;
+                font-weight: bold;
+            }
+        }
+ 
+img {
+    width: 100px;
+}
+
+.gif:hover {
+    background-color:#0091ff !important ;
+    color: white !important;
+    transition: 0.3s !important;
+    -webkit-transition: 0.3s !important;
+    -moz-transition: 0.3s !important;
+    -ms-transition: 0.3s !important;
+    -o-transition: 0.3s !important;
+}
