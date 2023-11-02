@@ -6,6 +6,10 @@
   --red-color: #f44336;
   --grey-color: #888;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 * {
   box-sizing: border-box;
 }
