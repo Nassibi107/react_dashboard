@@ -1,13 +1,10 @@
 import "bootstrap/dist/css/bootstrap.css"
 
-import { FaUserAlt } from "react-icons/fa";
-
-
 function Users() {
 
-  const data = 
+  const data =
   [
-  
+
     {
       "name": "John Doe",
       "gmail": "john.doe@gmail.com",
@@ -66,12 +63,7 @@ function UserData (props)
       // "bouquets": "12 bouquets",
       // "status": "stop"
       <div className="friend bg-white rad-6 p-15 p-relative">
-            <div className="contact">
-              <i className="fa-solid fa-phone"></i>
-              <i className="fa-regular fa-envelope"></i>
-            </div>
             <div className="txt-c">
-             <FaUserAlt className="rad-half mt-10 mb-10 w-25 h-25" />
               <h4 className="m-0">{props.u.name}</h4>
               <span className="c-grey">{props.u.gmail}</span>
             </div>
@@ -91,13 +83,13 @@ function UserData (props)
               }
             </div>
             <div className="info between-flex fs-13">
-                <button className="bg-blue c-white btn btn-outline-warning" href="profile.html">Edit subscriber</button>
-                <button className="bg-red c-white btn btn-outline-danger" href="ddd" 
+                <button className="bg-blue c-white btn btn-outline-warning" href="profile.html">Edit</button>
+                <button className="bg-red c-white btn btn-outline-danger" href="ddd"
                 onClick={ () =>{window.confirm('Are sure want to delete?')}}
-                
+
                 >Remove</button>
-          </div> 
-        </div> 
+          </div>
+        </div>
      )
 }
 export default Users

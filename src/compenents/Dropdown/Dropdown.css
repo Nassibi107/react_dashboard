@@ -1,27 +1,28 @@
 
 
-   
-
-        .card {
+ .card {
             width: 250px;
-             height: 300px;
-             overflow: auto;
         }
+@media (max-width: 767px) {
+    .card {
+        width: 100%;
+    }
+}
 
-        #circle-avatar {
-            display: grid;
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            background-color: #0091ff;
-            place-items: center;
+#circle-avatar {
+    display: grid;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #0091ff;
+    place-items: center;
 
-            span {
+span {
                 font-size: 48px;
                 font-weight: bold;
             }
         }
- 
+
 img {
     width: 100px;
 }
