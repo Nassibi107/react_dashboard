@@ -1,9 +1,8 @@
 
-import { Link } from 'lucide-react';
+
 import { PopupMenu } from "react-simple-widgets";
 import './Dropdown.css'
 import Logo from "../../assest/imgs/User.gif"
-import React, { useState, useEffect, useRef } from 'react';
 function Dropdown() {
 
  return (

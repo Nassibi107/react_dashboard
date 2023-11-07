@@ -66,10 +66,7 @@ function UserData (props)
       // "bouquets": "12 bouquets",
       // "status": "stop"
       <div className="friend bg-white rad-6 p-15 p-relative">
-            <div className="contact">
-              <i className="fa-solid fa-phone"></i>
-              <i className="fa-regular fa-envelope"></i>
-            </div>
+           
             <div className="txt-c">
              <FaUserAlt className="rad-half mt-10 mb-10 w-25 h-25" />
               <h4 className="m-0">{props.u.name}</h4>
