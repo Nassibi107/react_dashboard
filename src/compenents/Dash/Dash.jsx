@@ -53,13 +53,13 @@ function Dash() {
 
 
 
-  ]  
+  ]
 
   return (
     <>
          <h1 className="p-relative">Dashboard</h1>
         <div className="wrapper d-grid gap-20">
-          
+
           <div className="welcome bg-white rad-10 txt-c-mobile block-mobile">
             <div className="intro p-20 d-flex space-between bg-eee">
               <div>
@@ -109,11 +109,11 @@ function Dash() {
                 </tr>
               </thead>
               <tbody>
-               
+
                  {data.map((info) => (
                              < Table x={info} />
                         ))}
-               
+
               </tbody>
             </table>
           </div>

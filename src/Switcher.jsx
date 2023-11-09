@@ -5,6 +5,7 @@ import { Services,Users,Setting, Dash} from './compenents/index';
 import "./master.css"
 import "./framework.css"
 import { BrowserRouter as Router,Routes,Route} from 'react-router-dom'
+import MySubscribtion from './compenents/MySubscribtion/MySubscribtion';
 function Switcher() {
   return (
     <Router>
@@ -14,7 +15,8 @@ function Switcher() {
        <Route path="Services" element={<Services/>} />
        <Route path="Users" element={<Users/>} />
        <Route path="Setting" element={<Setting/>} />
-    </Routes>
+       <Route path="/Services/package/:id" element={<MySubscribtion/>} />
+       </Routes>
     </Admin>
     </Router>
   )

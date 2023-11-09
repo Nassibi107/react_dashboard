@@ -1,3 +1,4 @@
+
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 
@@ -28,7 +29,7 @@ const Service = () => {
             animate='visible'
             variants={scrollFromLeftVariants}
             onClick={() => {
-              navigate(`service/${serviceItem.name}`);
+              navigate(`/Services/package/${serviceItem.name}`);
             }}
           >
             <div className='text-center pt-10 hover:scale-90 transition-all duration-500'>

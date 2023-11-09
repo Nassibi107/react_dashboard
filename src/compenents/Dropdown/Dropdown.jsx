@@ -1,8 +1,10 @@
 
 
 import { PopupMenu } from "react-simple-widgets";
+import Logo from "../../assest/imgs/User.gif";
+
 import './Dropdown.css'
-import Logo from "../../assest/imgs/User.gif"
+
 function Dropdown() {
 
  return (
