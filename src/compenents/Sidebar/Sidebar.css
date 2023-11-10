@@ -1,8 +1,8 @@
 /* NX = not expanded */
 
 :root {
-    --primary: #0091ff;
-    --dark: #061b28;
+    --primary: #00babc;
+    --dark: #292d39;
     --gray: #756388;
     --light: #ffffff;
 }
@@ -22,7 +22,7 @@ code {
 }
 .side-nav-container {
     background-color: var(--dark);
-    width: 300px;
+    width: 200px;
     position: relative;
     color: var(--light);
 
@@ -43,8 +43,8 @@ code {
 }
 
 .nav-heading {
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
     height: 75px;
 }
 

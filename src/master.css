@@ -1,6 +1,6 @@
 :root {
-  --blue-color:#061b28;
-  --blue-alt-color:#0091ff;
+  --blue-color:#292d39;
+  --blue-alt-color:#00babc;
   --orange-color: #f59e0b;
   --green-color: #22c55e;
   --red-color: #f44336;
@@ -112,7 +112,7 @@ ul {
   overflow: hidden;
 }
 .head {
-  background-color: #061b28;
+  background-color: var(--blue-color);
 }
 .head .search::before {
   font-family: var(--fa-style-family-classic);

@@ -65,7 +65,7 @@ function Setting() {
 
       <div className="center-flex">
         <div className="settings-page  gap-20">
-        <h1 className="p-relative">Settings</h1>
+        
           <div className="p-20 bg-white rad-10">
             <h2 className="mt-0 mb-10">General Info</h2>
             <p className="mt-0 mb-20 c-grey fs-15">General Information About Your Account</p>

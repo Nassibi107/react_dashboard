@@ -1,12 +1,12 @@
 :root {
-  --blue-color: #0075ff;
-  --blue-alt-color: #0d69d5;
+  --blue-color:#292d39;
+  --blue-alt-color:#00babc;
   --orange-color: #f59e0b;
   --green-color: #22c55e;
   --red-color: #f44336;
   --grey-color: #888;
 }
-/* Start Box */
+ Box */
 .d-flex {
   display: flex;
 }

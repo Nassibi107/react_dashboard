@@ -38,7 +38,6 @@ const SideNavBar = () => {
 				<div className="nav-heading">
 					{isExpanded && (
 						<div className="nav-brand">
-							<img src="icons/Logo.svg" alt="" srcset="" />
 							<h2>Dashboard</h2>
 						</div>
 					)}
@@ -59,7 +58,7 @@ const SideNavBar = () => {
 							className={isExpanded ? "menu-item" : "menu-item menu-item-NX"}
 							to = {path}
 						>
-						
+
 							<img className="menu-item-icon" src={icon} alt="" srcset="" />
 							{isExpanded && <p>{text}</p>}
 						</Link>

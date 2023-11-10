@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import Countdown from 'react-countdown';
 import ModalConfirmationUnSubscribe from './ModaConfirmationUnSubscribe/ModalConfirmationUnSubscripe'
 import ModalDetailsSubscribtion from './ModalDetailsSubscribtion/ModalDetailsSubscribtion'
 import { useNavigate, useParams } from 'react-router';
@@ -98,12 +97,7 @@ const MySubscribtion = () => {
     <div className='container px-5 mx-auto md:px-20 my-20 md:my-[116px]'>
       <ModalDetailsSubscribtion isOpen={detailsOpen} onClose={CloseDetails} libelle={libelle} id={idDetails} ExpiryDate={subExpDate} SubDate={subDateDetails} ActiveCode={activeCodeDetails} price={priceDetails} />
       <ModalConfirmationUnSubscribe isOpen={isConfirmationOpen} onClose={closeConfirmation} onConfirm={handleConfirm} libelle={libelle} />
-      <div className='mt-20'>
-        <h1 className='md:text-start text-center text-2xl'>My Subscription {id}</h1>
-        <p className='text-slate-500 text-center md:text-start text-md mt-2'>
-          This is where you can explore and manage your subscriptions. You have the flexibility to both modify and delete your subscriptions, giving you full control over your subscription preferences.
-        </p>
-      </div>
+      <h1 className="p-relative">{id}</h1>
       <div className='flex'>
         <div className='my-5 text-center md:text-start mx-auto md:mx-0'>
           <span className='font-md'>Sort By:</span>
@@ -132,21 +126,13 @@ const MySubscribtion = () => {
                 <td>{item.duration}</td>
                 <td><span className='bg-Mybg rounded-md p-2 text-white'>{item.etat}</span></td>
                 <td>
-                  <button className='flex justify-start items-center w-full px-2 py-2 hover:bg-slate-100 rounded-md text-sm text-gray-700' onClick={() => openConfirmation(item.libelle)}>
-                      <span className='mr-3 bg-red-500 hover:bg-red-400 rounded-md p-1 text-white'>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
-                        </svg>
-                      </span>
+                  <button className='btn btn-outline-danger' onClick={() => openConfirmation(item.libelle)}>
+                     delete
                     </button>
                 </td>
                 <td>
-                    <button className='flex justify-start items-center w-full px-2 py-2 hover:bg-slate-100 rounded-md text-sm text-gray-700' onClick={()=>{navigate(`/Services/package/Golden/update/${item.id}`)}}>
-                      <span className='mr-3 bg-yellow-500 hover:bg-yellow-400 rounded-md p-1 text-white'>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
-                        </svg>
-                      </span>
+                    <button className='btn btn-outline-warning' onClick={()=>{navigate(`/Services/package/Golden/update/${item.id}`)}}>
+                      edit
                     </button>
                 </td>
               </tr>

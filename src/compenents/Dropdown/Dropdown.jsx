@@ -43,7 +43,7 @@ function Dropdown() {
               <hr style={{ margin: "0 -24px 24px" }} />
 
               <div className="d-grid">
-                <button className="btn btn-primary">
+                <button className="btn spc">
                   <small>Logout</small>
                 </button>
               </div>

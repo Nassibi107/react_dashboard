@@ -3,10 +3,9 @@ function Head() {
   return (
 
          <div className="head  p-15 between-flex">
-            <div className="search p-relative">
-              <input className="p-10" type="search" placeholder="Type A Keyword" />
-            </div>
+            <div></div>
           <div className="icons d-flex align-center">
+            <div className="p-3 m-3">ccc</div>
             <Dropdown/>
           </div>
         </div>
